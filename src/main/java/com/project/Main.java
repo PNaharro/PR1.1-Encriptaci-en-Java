@@ -14,17 +14,20 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
-        final int windowWidth = 800;
-        final int windowHeight = 600;
+        final int windowWidth = 600;
+        final int windowHeight = 400;
 
         UtilsViews.parentContainer.setStyle("-fx-font: 14 arial;");
-        UtilsViews.addView(getClass(), "View0", "/assets/view0.fxml");
-        UtilsViews.addView(getClass(), "View1", "/assets/view1.fxml");
+        UtilsViews.addView(getClass(), "layout1", "/assets/layout1.fxml");
+        UtilsViews.addView(getClass(), "encriptar", "/assets/encriptar.fxml");
+        UtilsViews.addView(getClass(), "desencriptar", "/assets/desencriptar.fxml");
+        UtilsViews.addView(getClass(), "ok", "/assets/layout2.fxml");
+        UtilsViews.addView(getClass(), "error", "/assets/layout3.fxml");
 
         Scene scene = new Scene(UtilsViews.parentContainer);
         
         stage.setScene(scene);
-        stage.setTitle("Animació entre vistes");
+        stage.setTitle("Eina d'encriptació");
         stage.setMinWidth(windowWidth);
         stage.setMinHeight(windowHeight);
         stage.show();

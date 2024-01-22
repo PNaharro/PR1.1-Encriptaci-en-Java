@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.Controller2">
+   <children>
+      <AnchorPane prefHeight="62.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Line endX="499.0" endY="1.0" layoutX="101.0" layoutY="62.0" startX="-100.0" />
+            <Text layoutX="54.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Encriptar arxiu">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Button fx:id="back" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#back" prefHeight="36.0" prefWidth="39.0" text="&lt;-" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="161.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arxiu :" textAlignment="RIGHT" wrappingWidth="100.66015625">
+         <font>
+            <Font size="16.0" />
+         </font></Text>
+      <TextField fx:id="arxiu_p" layoutX="273.0" layoutY="106.0" />
+      <Text layoutX="143.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clau privada :" textAlignment="RIGHT" wrappingWidth="118.66015625">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="clau_p" layoutX="273.0" layoutY="140.0" />
+      <Text layoutX="143.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contrasenya :" textAlignment="RIGHT" wrappingWidth="118.66015625">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="contra" layoutX="273.0" layoutY="175.0" />
+      <Button fx:id="desencriptar" layoutX="226.0" layoutY="258.0" mnemonicParsing="false" onAction="#desencriptar" prefHeight="29.0" prefWidth="149.0" text="desencriptar" textAlignment="CENTER" />
+      <Text layoutX="171.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desti :" textAlignment="RIGHT" wrappingWidth="90.66015625">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="desti_p" layoutX="273.0" layoutY="206.0" />
+      <Button fx:id="seleccionarClave" layoutX="455.0" layoutY="139.0" mnemonicParsing="false" onAction="#seleccionarClave" text="Busca" />
+      <Button fx:id="seleccionarArchivo" layoutX="455.0" layoutY="106.0" mnemonicParsing="false" onAction="#seleccionarArchivo" text="Busca" />
+   </children>
+</AnchorPane>
